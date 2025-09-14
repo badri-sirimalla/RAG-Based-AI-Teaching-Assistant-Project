@@ -1,18 +1,39 @@
-# How to use this RAG AI Teaching assistant on your own data
-## Step 1 - Collect your videos
-Move all your video files to the videos folder
+# RAG AI Teaching Assistant: How to Use with Your Own Data
 
-## Step 2 - Convert to mp3
-Convert all the video files to mp3 by ruunning video_to_mp3
+This guide explains how to set up and use the RAG AI Teaching Assistant with your own data.
 
-## Step 3 - Convert mp3 to json 
-Convert all the mp3 files to json by ruunning mp3_to_json
+---
 
-## Step 4 - Convert the json files to Vectors
-Use the file preprocess_json to convert the json files to a dataframe with Embeddings and save it as a joblib pickle
+## Steps to Get Started
 
-## Step 5 - Prompt generation and feeding to LLM
+### Step 1: Collect Your Videos
+- Place all your video files in the `videos` folder.
 
-Read the joblib file and load it into the memory. Then create a relevant prompt as per the user query and feed it to the LLM
+### Step 2: Convert Videos to MP3
+- Run the `video_to_mp3.py` script to convert all video files into MP3 format.
+
+### Step 3: Convert MP3 to JSON
+- Use the `mp3_to_json.py` script to convert the MP3 files into JSON format.
+
+### Step 4: Generate Vectors from JSON
+- Run the `preprocess_json.py` script to:
+  - Convert the JSON files into a dataframe with embeddings.
+  - Save the dataframe as a `.joblib` pickle file.
+
+### Step 5: Generate Prompts and Feed to LLM
+- Load the `.joblib` file into memory.
+- Create a relevant prompt based on the user query.
+- Feed the prompt to the Language Learning Model (LLM).
+
+---
+
+## Notes
+- Ensure all scripts are in the same directory or properly referenced.
+- Follow the steps sequentially for the best results.
+- For any issues, refer to the documentation or raise a query.
+
+---
+
+Happy Teaching!
 
 
